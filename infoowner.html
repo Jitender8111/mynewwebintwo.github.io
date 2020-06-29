@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<Head>
+        
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <style>
+                 body{
+                     background-color: black;
+                 }
+                 .container{
+                     border: 3px solid ;
+                     width: 90%;
+                     margin-right: 5%;
+                     margin-left: 5%;
+                     margin-bottom: 5%;
+                     height: 640px;
+                    background-image: url("waterf.gif");
+                   
+                      }
+
+             .formstyle{
+                    border: 10px groove;
+                    width: 180px;
+                  height: 320px;				
+                    padding: 25px;
+					box-shadow: 20px 20px 10px black;
+			         background-color: grey;
+                     transition: all 2s ease-in-out;
+                     
+			 }
+			 .formstyle:hover{
+			 
+                transform: translate(150px,50px);
+             }
+            
+             
+            input{
+                    width: 55px;
+                    }
+                    input:hover{  transform: scale(1.4);}
+                    #inp{
+                            
+                            width: 175px	 
+                    }
+					  #clears{width:115px;}
+					  h2{
+					        
+					         font-size: 30px;
+					         color: black;
+							 margin-left:40px;
+							 margin-bottom: 2px;
+							 margin-top:5px;
+							 
+					      }
+						  #color{ 
+						          width: 200px;
+								  margin-left: 25px;
+								  
+								  }
+								 
+             </style>
+            <title>
+                   Owner Contact Details
+                 </title>
+</Head>
+<body > 
+ <div class="container">
+        
+	
+	             
+                <div class="formstyle">
+                            <h2>Calculator</h2>
+                       
+                       <form name="forms">
+                             
+                                <input type="text" name="answer" id="inp"><br><br>
+                                <input type="button" value="1" onclick="forms.answer.value += '1'">
+                                <input type="button" value="2" onclick="forms.answer.value += '2'">
+                                <input type="button" value="3" onclick="forms.answer.value += '3'">
+                                <br><br>
+                                <input type="button" value="4" onclick="forms.answer.value += '4'">
+                                <input type="button" value="5" onclick="forms.answer.value += '5'">
+                                <input type="button" value="6" onclick="forms.answer.value += '6'">
+                                <br><br>
+                                <input type="button" value="7" onclick="forms.answer.value += '7'">
+                                <input type="button" value="8" onclick="forms.answer.value += '8'">
+                                <input type="button" value="9" onclick="forms.answer.value += '9'">
+                                <br><br>
+                                <input type="button" value="0" onclick="forms.answer.value += '0'">
+                                <input type="button" value="-" onclick="forms.answer.value += '-'">
+                                <input type="button" value="+" onclick="forms.answer.value += '+'">
+                                <br><br>
+                                <input type="button" value="/" onclick="forms.answer.value += '/'">
+                                <input type="button" value="*" onclick="forms.answer.value += '*'">
+                                <input type="button" value="%" onclick="forms.answer.value += '%'">
+                                <br><br>
+             <input type="button" value="Clear All" onclick="forms.answer.value = ''" id="clears">
+           <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
+                       </form>
+                       
+                  
+                </div>
+                         
+                 <script>
+                        
+                        
+                 </script>
+            
+           
+
+
+ </div>
+</body>
+</html>
